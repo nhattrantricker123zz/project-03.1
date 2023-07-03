@@ -13,7 +13,7 @@ body {
     font-family: "Sora", sans-serif;
 }
 
-.cotainer {
+.container {
     width: 1170px;
     max-height: calc(100% - 48px);
     margin: 0 auto;
@@ -43,9 +43,25 @@ a {
     cursor: pointer;
     opacity: 0.9;
 }
+
+.section-heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -1px;
+}
+
+.section-desc {
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 30px;
+}
 /* Header */
 
 .header {
+    padding-bottom: 110px;
     min-height: 100vh;
     background: var(--header-bg);
 }
@@ -177,26 +193,110 @@ a {
     flex-grow: 1;
 }
 
-
-.hero-images{
+.hero-images {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.hero-img{
+.hero-img {
     width: 330px;
     height: 540px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.hero-img:first-child{
+.hero-img:first-child {
     position: relative;
     margin-right: -6px;
 }
 
-.hero-img:last-child{
+.hero-img:last-child {
     width: 210px;
     height: 410px;
+}
+
+/* Service */
+
+.service {
+    padding: 170px 135px;
+}
+
+.service-heading,
+.service-desc {
+    text-align: center;
+}
+.service-desc {
+    margin-top: 18px;
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service__row {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service__list{
+    padding-bottom: 55px;
+}
+
+.service-item {
+    width: 470px;
+    padding: 22px;
+    display: flex;
+    border-radius: 10px;
+    background: #fff;
+    align-items: center;
+    transition: 0.25s;
+}
+
+.service-item:hover{
+    position: relative;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon{
+    background-color: #2E80CE;
+    color: #FFFFFF;
+}
+
+.service-item__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #10375c;
+    background-color: #eff6fd;
+    border-radius: 50%;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    transition: 0.25s;
+}
+
+.service__body{
+    margin-left : 19px;
+}
+.service-item__heading {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 28px;
 }

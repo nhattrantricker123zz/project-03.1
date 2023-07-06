@@ -410,8 +410,154 @@ a {
     line-height: 30px;
 }
 
-.about-cotent__btn{
+.about-cotent__btn {
     margin-top: 38px;
 }
 
-/*  */
+/* us */
+.member {
+    padding-top: 170px;
+}
+
+.header-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member__cta {
+    margin-top: 38px;
+}
+
+.member-list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.member-item:hover .member-item__img-bg {
+    transform: scale(1.05);
+}
+
+.member-item__img-bg {
+    padding-top: 28px;
+    background-color: #eaf6ff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.member-item__thumb {
+    height: 290px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.25s;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.member-item__title {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.member__control {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+}
+
+.member__control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575f66;
+    color: #575f66;
+    outline: none;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.member__control-btn:hover {
+    background-color: #2e80ce;
+    border: 1px solid #2e80ce;
+    color: #ffffff;
+}
+
+/* Install */
+
+.install {
+    padding-top: 180px;
+}
+
+.install__inner {
+    padding: 0 70px;
+    background-color: #2e80ce;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+
+}
+
+
+.install__inner-img {
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+    display: block;
+}
+
+.install__content {
+    max-width: 586px;
+}
+
+.install__heading {
+    width: 498px;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -1px;
+}
+
+.install__content-desc {
+    margin-top: 18px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+
+.install__row{
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+    column-gap: 28px;
+}
+
+.install__row-btn{
+    padding: 0;
+    background-color: transparent;
+    outline: none;  
+    border: none;
+    cursor: pointer;
+}
